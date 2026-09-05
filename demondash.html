@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Demon Dash</title>
+  <style>
+    :root {
+      --bg: #0d0a10;
+      --card-bg: #16121d;
+      --border: #282033;
+      --primary: #ff3300;
+      --primary-glow: rgba(255, 51, 0, 0.25);
+      --accent: #ff8800;
+      --text: #e8e2ee;
+      --text-muted: #9e94a8;
+      --heading: #ffffff;
+      --link: #ff5522;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px var(--primary-glow);
+    }
+
+
+    h1 {
+      font-size: 2.3rem;
+      color: var(--heading);
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--heading);
+      margin-top: 36px;
+      margin-bottom: 14px;
+      padding-left: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      color: var(--accent);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--heading);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: rgba(255, 51, 0, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--heading);
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 12px;
+      }
+      .container {
+        padding: 28px 20px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Privacy Policy for Demon Dash</h1>
+    <div class="meta">
+      <strong>Effective Date:</strong> September 5, 2026 &bull; <strong>Package:</strong> <code>com.demondash.game</code>
+    </div>
+
+    <p>
+      This Privacy Policy describes how <strong>Demon Dash</strong> ("we", "our", or "the Game") collects, uses, and discloses information when you download, install, and play our mobile application.
+    </p>
+
+    <div class="highlight-box">
+      <p>
+        <strong>Summary:</strong> Demon Dash is an offline arcade runner game. We do not require account registration, and we do not collect personal identifiers such as your name, email address, or phone number. Third-party ad partners (Unity Ads) may process device and advertising identifiers to display video advertisements.
+      </p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>A. Information You Provide</h3>
+    <p>
+      The Game does not require account creation, profile setup, or user login. We do not ask for or collect personal information such as your name, email address, physical address, or contact details.
+    </p>
+
+    <h3>B. Information Stored Locally On Your Device</h3>
+    <p>
+      The Game stores gameplay data locally on your device using Android <code>SharedPreferences</code> and browser <code>localStorage</code>. This data includes:
+    </p>
+    <ul>
+      <li>High scores and total accumulated score</li>
+      <li>Level progression and unlocked worlds (Levels 1 to 50)</li>
+      <li>Audio and haptic settings (sound effects, ambient music, vibrations)</li>
+      <li>Ad frequency capping timestamps (to enforce a 10-minute cooldown on interstitial ads)</li>
+    </ul>
+    <p>
+      This data remains strictly on your device and is never uploaded to any external server operated by us.
+    </p>
+
+    <h3>C. Information Collected Automatically by Third Parties (Unity Ads)</h3>
+    <p>
+      The Game integrates the <strong>Unity Ads SDK</strong> (provided by Unity Technologies) to deliver rewarded and interstitial video advertisements. Unity Technologies may automatically collect certain device and usage information, including:
+    </p>
+    <ul>
+      <li><strong>Device Identifiers:</strong> Google Advertising ID (GAID / Ad ID), Android ID, IDFV/IDFA where applicable.</li>
+      <li><strong>Device Technical Information:</strong> Device model, manufacturer, operating system version, screen resolution, language settings, and battery status.</li>
+      <li><strong>Network and Location Information:</strong> IP address (used to infer coarse, country/city-level approximate location) and network connection type (Wi-Fi or mobile data).</li>
+      <li><strong>Ad Interaction Data:</strong> Information regarding ad impressions, views, clicks, completion status, and ad playback duration.</li>
+    </ul>
+
+    <h2>2. How Information is Used</h2>
+    <p>The information collected through third-party advertising SDKs is utilized for the following legitimate purposes:</p>
+    <ul>
+      <li>Serving contextual and non-personalized or personalized advertisements.</li>
+      <li>Enabling the voluntary <em>Revive & Continue</em> rewarded video mechanic and in-game revival rewards.</li>
+      <li>Preventing ad fraud, tracking invalid impressions, and monitoring monetization performance.</li>
+      <li>Ensuring compliance with Google Play's Better Ads Standards and frequency capping policies.</li>
+    </ul>
+
+    <h2>3. Third-Party Service Providers</h2>
+    <p>
+      We recommend reviewing the privacy policies of the third-party monetization partner used within Demon Dash:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Partner</th>
+          <th>Purpose</th>
+          <th>Privacy Policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Unity Ads</strong> (Unity Technologies)</td>
+          <td>In-app advertising (Rewarded &amp; Interstitial)</td>
+          <td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity Player Privacy Policy</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Advertising ID (Google Play AD_ID) &amp; User Controls</h2>
+    <p>
+      In accordance with Google Play developer policies, our application declares the <code>com.google.android.gms.permission.AD_ID</code> permission to allow the Unity Ads SDK to deliver relevant advertising.
+    </p>
+    <p>
+      You have full control over the collection and use of your Advertising ID through your Android device settings:
+    </p>
+    <ul>
+      <li><strong>Opt-out of Personalized Ads:</strong> Go to <code>Settings &gt; Google &gt; Ads</code> and enable <em>"Opt out of Ads Personalization"</em> or <em>"Delete advertising ID"</em>.</li>
+      <li><strong>Reset Advertising ID:</strong> You can reset your device's unique advertising identifier at any time in the same menu.</li>
+    </ul>
+
+    <h2>5. Children's Privacy (COPPA)</h2>
+    <p>
+      Demon Dash is an action/arcade game targeted at players aged <strong>13 and older</strong>. The Game is not directed to children under 13 years of age (or under 16 in the EEA). We do not knowingly collect or solicit personal information from children. If you believe that a child has provided personal information or if you are a parent/guardian with concerns, please contact us at the email provided below and we will take immediate corrective action.
+    </p>
+
+    <h2>6. International Privacy Rights (GDPR &amp; CCPA/CPRA)</h2>
+    <h3>A. European Economic Area (EEA) / UK Residents (GDPR)</h3>
+    <p>
+      Under the General Data Protection Regulation (GDPR), users residing in the EEA/UK have the right to access, rectify, port, or erase their personal data processed by third-party ad networks, and to withdraw consent for personalized advertising at any time through their device settings.
+    </p>
+
+    <h3>B. California Residents (CCPA / CPRA)</h3>
+    <p>
+      Under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), California residents have the right to:
+    </p>
+    <ul>
+      <li>Know what categories of personal information are collected and shared.</li>
+      <li>Request deletion of personal information collected by third parties.</li>
+      <li>Opt out of the "sale" or "sharing" of personal information for cross-context behavioral advertising (by resetting or disabling your Advertising ID in Android Settings).</li>
+    </ul>
+
+    <h2>7. Data Security and Retention</h2>
+    <p>
+      All communication between the Unity Ads SDK and advertising servers is encrypted in transit using industry-standard <strong>HTTPS (TLS)</strong> protocols. In-game score and progression data resides solely on your physical device and can be erased at any time by clearing the application's cache/data in Android system settings or uninstalling the app.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+      We may update our Privacy Policy from time to time to reflect modifications in game features, legal obligations, or Google Play policy requirements. Any changes will become effective immediately upon posting the updated policy.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have questions, concerns, or requests regarding this Privacy Policy or data practices, please contact us at:
+    </p>
+    <div class="highlight-box">
+      <p><strong>Developer:</strong> NextGen Labs</p>
+      <p><strong>Email:</strong> <a href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a></p>
+      <p><strong>Application:</strong> Demon Dash (<code>com.demondash.game</code>)</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Demon Dash. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
