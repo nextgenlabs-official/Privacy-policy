@@ -1,227 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – OneFiles</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OneFiles Privacy Policy explaining how information may be collected, used, stored, and shared.">
+  <meta name="robots" content="index,follow">
+  <title>OneFiles — Privacy Policy</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --bg: #e8e8e8;
+      color-scheme: light;
+      --bg: #f6f7fb;
       --surface: #ffffff;
-      --text: #1a1a1a;
-      --muted: #6b6b6b;
-      --accent: #2563eb;
-      --border: #e2e0d8;
-      --heading-font: 'Space Mono', monospace;
-      --body-font: 'Sora', sans-serif;
+      --text: #202331;
+      --muted: #626779;
+      --border: #e5e7ef;
+      --accent: #6658e8;
+      --accent-soft: #f0eeff;
     }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
+      margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: var(--body-font);
-      font-size: 15px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.75;
-      min-height: 100vh;
-      padding: 0 0 60px;
     }
-
+    .page {
+      width: min(900px, calc(100% - 32px));
+      margin: 48px auto;
+    }
     header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 18px 24px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header .logo {
-      font-family: var(--heading-font);
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--text);
-    }
-
-    header .logo span {
-      color: var(--accent);
-    }
-
-    .badge {
-      margin-left: auto;
-      font-family: var(--heading-font);
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--muted);
+      padding: 34px 36px;
       border: 1px solid var(--border);
-      padding: 3px 8px;
-      border-radius: 4px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #ffffff, #f2f0ff);
+      margin-bottom: 20px;
     }
-
-    main {
-      max-width: 680px;
-      margin: 48px auto 0;
-      padding: 0 24px;
-    }
-
-    .page-title {
-      font-family: var(--heading-font);
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    .intro-text {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 36px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .section {
-      margin-bottom: 32px;
-    }
-
-    .section-heading {
-      font-family: var(--heading-font);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 2px;
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .13em;
       text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
-
-    .section-heading::before {
-      content: '';
-      display: inline-block;
-      width: 3px;
-      height: 14px;
-      background: var(--accent);
-      border-radius: 2px;
-      flex-shrink: 0;
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -.04em;
     }
-
-    .section p {
-      color: #333;
-      font-size: 14.5px;
-      line-height: 1.8;
+    .updated { margin: 14px 0 0; color: var(--muted); font-size: .95rem; }
+    main {
+      padding: 32px 36px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: 0 10px 35px rgba(30, 35, 70, .04);
     }
-
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 24px 0;
+    section { padding: 0 0 24px; margin: 0 0 24px; border-bottom: 1px solid var(--border); }
+    section:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.18rem;
+      line-height: 1.4;
+      letter-spacing: -.015em;
     }
-
-    .contact-link {
-      color: var(--accent);
-      font-family: var(--heading-font);
-      font-size: 13px;
-      text-decoration: none;
-      word-break: break-all;
+    h3 { margin: 18px 0 6px; font-size: 1rem; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 22px; margin: 8px 0 14px; }
+    li { margin: 5px 0; padding-left: 2px; }
+    a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+    .note {
+      padding: 16px 18px;
+      margin: 18px 0 0;
+      border-radius: 12px;
+      background: var(--accent-soft);
+      border: 1px solid #ded9ff;
+      color: #38315f;
     }
-
-    .contact-link:hover {
-      text-decoration: underline;
-    }
-
     footer {
-      margin-top: 60px;
+      padding: 22px 8px 0;
       text-align: center;
-      font-size: 12px;
       color: var(--muted);
-      font-family: var(--heading-font);
-      letter-spacing: 0.5px;
+      font-size: .88rem;
+    }
+    @media (max-width: 600px) {
+      .page { width: min(100% - 20px, 900px); margin: 16px auto; }
+      header { padding: 26px 22px; border-radius: 16px; }
+      main { padding: 24px 22px; border-radius: 16px; }
+      section { padding-bottom: 20px; margin-bottom: 20px; }
     }
   </style>
 </head>
 <body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">OneFiles · Privacy</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated"><strong>Last updated:</strong> October 2026</p>
+    </header>
 
-  <header>
-    <div class="logo">One<span>Files</span></div>
-    <div class="badge">Privacy Policy</div>
-  </header>
+    <main>
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>OneFiles (“App”, “we”, “us”, or “our”) is an all-in-one file management and productivity application. This Privacy Policy explains how information may be collected, used, stored, and shared when you use the App.</p>
+        <p>The information processed depends on the features you use, the permissions you grant, your account settings, and the third-party services enabled in the App.</p>
+      </section>
 
-  <main>
-    <h1 class="page-title">Privacy Policy</h1>
-    <p class="intro-text">
-      OneFiles is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.
-    </p>
+      <section id="information">
+        <h2>2. Information We Collect or Process</h2>
 
-    <div class="section">
-      <div class="section-heading">1. Information We Collect</div>
-      <p>We may collect personal information such as your name, email address, profile information, and account details when you register or sign in via Google. To provide our core utilities, we request access to on-device data such as files, camera, microphone, and precise location. We also collect device info, advertising identifiers, and usage data.</p>
-    </div>
-    <hr class="divider" />
+        <h3>a) Account Information</h3>
+        <p>When you sign in using Google Sign-In or email/password authentication, Firebase Authentication may process identifiers associated with your account, such as your email address, user ID, and, where provided, display name or profile photo. The information received depends on your authentication method and account permissions.</p>
 
-    <div class="section">
-      <div class="section-heading">2. How We Use Your Information</div>
-      <p>We use your information to operate and improve our services. Storage permissions are used strictly for local file management. Camera and microphone permissions are used for document scanning and audio features. Chat prompts are processed to provide AI responses. Billing information is processed for in-app purchases.</p>
-    </div>
-    <hr class="divider" />
+        <h3>b) Diagnostics and Usage Information</h3>
+        <p>Firebase Crashlytics may process crash reports, app state information, device model, operating system version, app version, and related diagnostic information. Other enabled services may process technical or usage information necessary to provide their features.</p>
 
-    <div class="section">
-      <div class="section-heading">3. How We Safeguard Your Information</div>
-      <p>We take reasonable measures to protect your information. Your files, documents, and media are processed locally on your device and are not uploaded to our servers unless explicitly synchronized using your account. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
-    </div>
-    <hr class="divider" />
+        <h3>c) Advertising Information</h3>
+        <p>Google AdMob and Unity LevelPlay, where enabled, may process advertising identifiers, IP address, device information, ad interactions, diagnostic information, and other data according to their SDK configurations, your consent and settings, and applicable policies. Personalised or non-personalised advertising availability depends on your region and the configuration of the services.</p>
 
-    <div class="section">
-      <div class="section-heading">4. Third-Party Services</div>
-      <p>We use Firebase (Auth, Firestore, Database, Messaging) and Google Sign-In for secure account services. We use Unity Ads/LevelPlay and Google AdMob for advertising. We utilize Google Play Billing for purchases and OpenStreetMap for mapping. We also utilize third-party Cloud AI providers (such as Groq/Gemini/OpenAI) to process API Chat prompts. These services collect and process data in accordance with their own privacy policies.</p>
-    </div>
-    <hr class="divider" />
+        <h3>d) Referral and Subscription Information</h3>
+        <p>The App may process referral codes, referral relationships, account identifiers, subscription status, and related records using Firebase Realtime Database or other configured services. Payment credentials are handled by the relevant payment provider and are not collected by us unless expressly disclosed.</p>
 
-    <div class="section">
-      <div class="section-heading">5. Account and Data Deletion</div>
-      <p>We respect your right to control your personal data. You can instantly delete your account and all associated cloud data directly within the app by navigating to <strong>Profile &gt; Top Right Menu &gt; Delete Account</strong>. This action permanently wipes your authentication credential and associated database nodes.</p>
-      <br/>
-      <p>Alternatively, you may request manual account and data deletion by sending an email from your registered Google account to <a class="contact-link" href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a>.</p>
-    </div>
-    <hr class="divider" />
+        <h3>e) Files and Documents</h3>
+        <p>The App accesses files you select or make available through the permissions granted to it to support file management, media playback, PDF tools, document scanning, and related features.</p>
+        <p>Files processed entirely on your device are not automatically uploaded to our servers solely because the App accesses them. However, files or extracted content may be transmitted when you initiate a sharing or upload action or use a feature that requires remote processing, including cloud AI.</p>
 
-    <div class="section">
-      <div class="section-heading">6. Children's Privacy</div>
-      <p>OneFiles is not directed to children under 13. We do not knowingly collect personal information from children under 13. If we discover that personal information has been unintentionally collected from a child under 13, we take immediate steps to delete that data from our systems.</p>
-    </div>
-    <hr class="divider" />
+        <h3>f) Location Information</h3>
+        <p>Location permission may be used by features such as GPS Camera, Compass, or nearby-device discovery, depending on the feature and your device settings. Where a feature obtains precise or approximate location, it is processed as needed to provide that feature.</p>
+        <p>Location information may also be embedded in photos or other content if you enable a relevant feature. We do not claim that location is never transmitted; any transmission depends on the feature and your actions. We do not intentionally store location information on our own servers unless the relevant feature requires it and the collection is disclosed.</p>
 
-    <div class="section">
-      <div class="section-heading">7. Grievance Redressal (DPDP Act)</div>
-      <p>In accordance with the Digital Personal Data Protection (DPDP) Act, 2023, if you have any questions, concerns, or grievances regarding the processing of your personal data, you may reach out to our team at<br/>
-        <a class="contact-link" href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a>. We acknowledge and address all privacy requests promptly.
-      </p>
-    </div>
-    <hr class="divider" />
+        <h3>g) Camera and Microphone</h3>
+        <p>Camera access may support document scanning, GPS Camera, and other camera-based tools. Microphone access may support screen recording, sound measurement, voice input, and AI voice features.</p>
+        <p>Where supported, processing may occur on-device. Audio, video, images, or transcripts may be transmitted to a remote service when you use a feature that requires it. The precise handling depends on the selected feature and processing mode.</p>
 
-    <div class="section">
-      <div class="section-heading">8. Changes to This Privacy Policy</div>
-      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-    </div>
-    <hr class="divider" />
+        <h3>h) Bluetooth and Nearby Devices</h3>
+        <p>Bluetooth and nearby-device capabilities may be used for supported file sharing, device discovery, or audio features. Technical information may be exchanged with nearby devices or processed by the relevant platform service to establish a connection. The information handled depends on the feature and the underlying technology.</p>
 
-    <div class="section">
-      <div class="section-heading">9. Contact Us</div>
-      <p>If you have any general questions about this Privacy Policy or app support, please contact us at<br/>
-        <a class="contact-link" href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a>
-      </p>
-    </div>
+        <h3>i) Notifications and Firebase Cloud Messaging</h3>
+        <p>If push notifications are enabled, Firebase Cloud Messaging may process a device registration token and related delivery information. Tokens may be associated with your account or device in our configured systems to deliver notifications such as reminders, verses, or app updates.</p>
+        <p>You can manage notification permissions through your device settings. Disabling notifications may prevent delivery of certain messages.</p>
 
-    <footer>© OneFiles · NextGen Labs</footer>
-  </main>
+        <h3>j) AI Queries and Voice Content</h3>
+        <p>In local AI mode, supported AI processing occurs on your device. In cloud AI mode, prompts, extracted document text, voice transcripts, or other content you submit may be sent to the relevant AI provider for processing.</p>
+        <p>The provider may process technical request information according to its own terms and privacy policy. Data retention, model-improvement practices, and other processing depend on the provider and service configuration. We will identify relevant providers in the App or accompanying disclosures where applicable.</p>
+        <p>Avoid submitting passwords, payment credentials, confidential documents, or other sensitive information unless necessary and you understand the applicable processing arrangements.</p>
 
+        <h3>k) Network and Peer-to-Peer Information</h3>
+        <p>File-sharing, torrent, and chat features may process IP addresses, connection information, device identifiers used by the relevant technology, and information necessary to establish or maintain connections. Torrent peers or trackers may be able to see your public IP address and torrent-related connection information.</p>
+        <p>The exact information exchanged depends on the protocol, network configuration, and feature you use.</p>
+      </section>
+
+      <section id="use">
+        <h2>3. How We Use Information</h2>
+        <p>We may use information, as applicable, to:</p>
+        <ul>
+          <li>Provide and maintain app features.</li>
+          <li>Authenticate users and manage account access.</li>
+          <li>Operate referral and subscription features.</li>
+          <li>Deliver notifications requested or enabled by users.</li>
+          <li>Display and measure advertisements.</li>
+          <li>Diagnose crashes, improve performance, and troubleshoot issues.</li>
+          <li>Respond to support requests and protect the security of the App.</li>
+          <li>Process cloud AI requests and other user-requested online features.</li>
+          <li>Comply with legal obligations and enforce our Terms.</li>
+        </ul>
+      </section>
+
+      <section id="third-parties">
+        <h2>4. Third-Party Services and Data Sharing</h2>
+        <p>Depending on the features enabled, the App may use:</p>
+        <ul>
+          <li>Firebase Authentication — account authentication.</li>
+          <li>Firebase Realtime Database and other configured Firebase services — referral records, account-related data, or application functionality.</li>
+          <li>Firebase Crashlytics — crash diagnostics.</li>
+          <li>Firebase Cloud Messaging — push notifications.</li>
+          <li>Firebase In-App Messaging — in-app messages, if enabled.</li>
+          <li>Google AdMob — advertising.</li>
+          <li>Unity LevelPlay — advertising mediation.</li>
+          <li>Google Play Billing — purchases and subscriptions.</li>
+          <li>Google Nearby Connections — supported nearby-device communication.</li>
+          <li>WebRTC or a hosted communication provider — real-time chat or communication, where enabled.</li>
+          <li>jlibtorrent or related torrent components — torrent functionality.</li>
+          <li>Cloud AI providers — AI requests, if cloud AI is enabled.</li>
+        </ul>
+        <p>The services listed above may process information according to their technical role, configuration, and applicable privacy terms. Not every service necessarily receives personal information in every use of the App.</p>
+        <p>We may also disclose information where required by law, to respond to valid legal requests, or to protect the security, rights, and safety of users and others.</p>
+      </section>
+
+      <section id="advertising">
+        <h2>5. Data Sales and Advertising</h2>
+        <p>We do not sell personal information for money. However, advertising and analytics services may process or disclose information for advertising, measurement, fraud prevention, or other purposes described in their policies. Depending on applicable law, certain advertising-related disclosures may be treated as sharing or targeted advertising.</p>
+        <p>Where required, we will provide appropriate consent and privacy controls. Available advertising settings may also be managed through your device or the relevant service.</p>
+      </section>
+
+      <section id="storage">
+        <h2>6. Data Storage and International Processing</h2>
+        <p>Information may be stored on your device or processed by third-party providers on servers located in India or other countries, depending on the service and its configuration.</p>
+        <p>The location and safeguards applicable to a particular service depend on the provider's arrangements. We take reasonable steps appropriate to our role to protect information and select services.</p>
+      </section>
+
+      <section id="retention">
+        <h2>7. Data Retention</h2>
+        <p>We retain personal information only for as long as reasonably necessary for the purposes described in this Policy, subject to applicable legal, security, and operational requirements.</p>
+        <p>Account information may be retained while your account remains active. Diagnostic information may be retained according to the configured retention settings of the relevant service. Referral, transaction, security, and legal records may be retained for a longer period where justified.</p>
+        <p>Actual retention periods depend on the service and configuration. Where we control the information, we take reasonable steps to delete or de-identify it when it is no longer required. Third-party providers may retain information under their own policies.</p>
+      </section>
+
+      <section id="deletion">
+        <h2>8. Account and Data Deletion</h2>
+        <p>Users can initiate account deletion through the Delete Account option available within the OneFiles app.</p>
+        <p>When an account deletion request is completed, we will delete the personal information associated with the account that we control, subject to applicable legal obligations and legitimate retention requirements.</p>
+        <p>Uninstalling OneFiles does not automatically delete your account or information stored by online services.</p>
+        <p>For account-deletion assistance, contact <a href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a>.</p>
+      </section>
+
+      <section id="rights">
+        <h2>9. Your Privacy Rights</h2>
+        <p>Depending on applicable law, you may have rights to request access to, correction of, or deletion of personal information and to exercise other available privacy rights.</p>
+        <p>To submit a request or ask a privacy question, contact:</p>
+        <p><a href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a></p>
+        <p>We may need to verify your identity before processing certain requests. We will handle requests in accordance with applicable law.</p>
+      </section>
+
+      <section id="security">
+        <h2>10. Security</h2>
+        <p>We use reasonable technical and organisational measures appropriate to the information and services involved. These may include platform security controls, access restrictions, encrypted network connections, and device-local processing where supported.</p>
+        <p>No method of storage or transmission is completely secure. We cannot guarantee absolute security, but we take reasonable steps to protect information within our control.</p>
+      </section>
+
+      <section id="children">
+        <h2>11. Children's Privacy</h2>
+        <p>The App is not intended for children under 13, and we do not knowingly collect personal information from children under 13 in violation of applicable law. Where required, we will take appropriate steps to address such collection.</p>
+        <p>If you believe a child has provided personal information inappropriately, contact us at <a href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a>.</p>
+      </section>
+
+      <section id="permissions">
+        <h2>12. Permissions and User Controls</h2>
+        <p>You can manage supported permissions through your Android device settings, including location, camera, microphone, notifications, and other permissions. Revoking a permission may limit the functionality of features that depend on it.</p>
+        <p>You can also manage advertising preferences through available device settings and any consent controls presented by the App.</p>
+      </section>
+
+      <section id="changes">
+        <h2>13. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy to reflect changes in the App, services, legal requirements, or data practices. The latest version will include an updated date. Where required, we will notify users or obtain consent before implementing relevant changes.</p>
+      </section>
+
+      <section id="contact">
+        <h2>14. Contact Us</h2>
+        <p>For privacy questions, data requests, or general support:</p>
+        <p><strong>Email:</strong> <a href="mailto:official.nextgenlabs@gmail.com">official.nextgenlabs@gmail.com</a><br>
+        <strong>App:</strong> OneFiles</p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year">2026</span> OneFiles. All rights reserved.
+    </footer>
+  </div>
+  <script>
+    // Keeps the footer year current without changing the policy's last-updated date.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
